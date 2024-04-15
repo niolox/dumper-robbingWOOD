@@ -1,7 +1,8 @@
 # // First Install Python Libraries //
-# // pip install requests colorthon cryptofuzz //
+# // pip install requests colorthon cryptofuzz requests-random-user-agent//
 # // Import Libraries //
 import random, requests, time, os, sys
+import requests_random_user_agent
 from cryptofuzz import Ethereum, Dogecoin, Convertor
 from colorthon import Colors
 
@@ -92,7 +93,7 @@ clearNow()
 
 # // Checker Ethereum Balance From Atomic Wallet //
 def CheckBalanceEthereum(address: str) -> str:
-    url = f"https://ethbook.guarda.co/api/v2/address/{address}?page=1"
+    url = f"https://ethbook.guarda.co/api/v2/address/{address}"
     req = requests.get(url)
     if req.status_code == 200:
         bal = req.json()["balance"]
