@@ -47,6 +47,7 @@ You need to install a number of libraries to execute the script that you can use
 pip install cryptofuzz
 pip install colorthon
 pip install requests
+pip install requests-random-user-agent
 ```
 or `pip install -r requirements.txt`
 
@@ -57,6 +58,7 @@ or `pip install -r requirements.txt`
 pip3 install cryptofuzz
 pip3 install colorthon
 pip3 install requests
+pip3 install requests-random-user-agent
 ```
 or `pip3 install -r requirements.txt`
 
