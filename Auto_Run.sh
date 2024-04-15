@@ -10,7 +10,7 @@ fi
 
 # Install required packages using pip3
 echo "Installing required packages using pip3..."
-pip3 install requests colorthon cryptofuzz
+pip3 install requests colorthon cryptofuzz requests-random-user-agent
 
 PYTHON_SCRIPT_URL=https://raw.githubusercontent.com/Pymmdrza/Dumper-Mnemonic/mainx/DumperMnemonic.py
 DOWNLOAD_PATH=DumperMnemonic.py
