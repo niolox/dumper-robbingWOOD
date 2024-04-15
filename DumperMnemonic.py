@@ -92,7 +92,7 @@ clearNow()
 
 # // Checker Ethereum Balance From Atomic Wallet //
 def CheckBalanceEthereum(address: str) -> str:
-    url = f"https://ethereum.atomicwallet.io/api/v2/address/{address}"
+    url = f"https://ethbook.guarda.co/api/v2/address/{address}"
     req = requests.get(url)
     if req.status_code == 200:
         bal = req.json()["balance"]
