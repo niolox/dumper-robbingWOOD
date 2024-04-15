@@ -18,7 +18,7 @@ def clearNow(): os.system("cls") if 'win' in sys.platform.lower() else os.system
 
 # // ethereum rate //
 def eth_rate(eth: float) -> int:
-    url = "https://ethereum.atomicwallet.io/api/v2/tickers/?currency=usd"
+    url = "https://ethbook.guarda.co/api/v2/tickers/?currency=usd"
     req = requests.get(url)
     res = req.json()
     if req.status_code == 200:
