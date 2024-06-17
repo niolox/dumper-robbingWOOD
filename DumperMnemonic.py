@@ -215,3 +215,4 @@ while True:
         print(f"[{z} | Found:{ff}] DOGE: {yellow}{doge_addr}{reset}{spc_doge}[Balance: {yellow}{doge_balance}{reset}]")
         print(f"[{z} | Found:{ff}]  Mne: {red}{mnemonic[0:64]}{reset}")
         print(f"[{z} | Found:{ff}]  Hex: {convert_hex}")
+        print(f"{'-' * 66}")
